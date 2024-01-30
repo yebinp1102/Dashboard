@@ -9,6 +9,7 @@ export default {
     fontFamily: {
       display: ['Gowun Dodum', 'sans-serif'],
       body: ['Gowun Dodum', 'sans-serif'],
+      point: ['Noto Sans', 'sans-serif'],
     },
     extend: {
       fontSize: {
