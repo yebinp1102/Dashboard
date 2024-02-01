@@ -6,6 +6,8 @@ import './App.css';
 import { useStateContext } from './context/contextProvider';
 import UserAnalysis from './pages/UserAnalysis';
 import Test from './pages/Test';
+import ReturnBike from './pages/ReturnBike';
+import RentBike from './pages/RentBike';
 
 const App = () => {
   const {activeMenu} = useStateContext();
@@ -46,18 +48,16 @@ const App = () => {
               <Routes>
                 {/* Dashboard */}
                 <Route path='/' element={"Home"} />
-                <Route path='/monlty/new_member' element={<UserAnalysis />} />
 
-                {/* Pages */}
+                {/* introduction */}
                 <Route path='/test' element={<Test />} />
-                <Route path='/employees' element={"Employees"} />
-                <Route path='/customers' element={"Customers"} />
+                <Route path='/rent' element={<RentBike />} />
+                <Route path='/return' element={<ReturnBike />} />
+                <Route path='/search/station' element={"Search station"} />
 
-                {/* Apps */}
-                <Route path='/kanban' element={"Kanban"} />
-                <Route path='/editor' element={"Editor"} />
-                <Route path='/calendar' element={"Calendar"} />
-                <Route path='/color-picker' element={"ColorPicker"} />
+                {/* analysis */}
+                <Route path='/monthly/usage' element={<UserAnalysis />} />
+                <Route path='/monthly/new_user' element={<Test />} />
 
               </Routes>
             </div>

@@ -11,6 +11,14 @@ export default {
       body: ['Gowun Dodum', 'sans-serif'],
       point: ['Noto Sans', 'sans-serif'],
     },
+    // textColor: {
+    //   'primary-500': '#22A699',
+    //   'primary-yellow': '#F2BE22',
+    //   'primary-orange': '#F29727',
+    //   'primary-red-orange': '#F03A47',
+    //   'primary-pink': '#FC60A8',
+    //   'white': '#fff'
+    // },
     extend: {
       fontSize: {
         14: '14px',
@@ -21,6 +29,20 @@ export default {
         'secondary-dark-bg': '#33373E',
         'light-gray': '#F7F7F7',
         'half-transparent': 'rgba(0, 0, 0, 0.5)',
+
+        'primary-500': '#22A699',
+        'primary-yellow': '#F2BE22',
+        'primary-orange': '#F29727',
+        'primary-dark-green': '#395C6B',
+        'primary-red-orange': '#F03A47',
+      },
+      textColor : {
+        'primary-500': '#22A699',
+        'primary-yellow': '#F2BE22',
+        'primary-orange': '#F29727',
+        'primary-dark-green': '#395C6B',
+        'primary-red-orange': '#F03A47',
+        'white': '#fff'
       },
       borderWidth: {
         1: '1px',
