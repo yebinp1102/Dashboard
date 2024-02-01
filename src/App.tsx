@@ -39,7 +39,7 @@ const App = () => {
           )}
 
           <div className={`dark:bg-main-bg bg-main-bg min-h-screen w-full ${activeMenu ? 'md:ml-72' : 'flex-2'}`}>
-            <div className="fixed md:static bg-main-bg dark:bg-main-dark-bg navbar w-full">
+            <div className="fixed md:static dark:bg-main-dark-bg navbar w-full">
                 <Navbar />
             </div>
           
@@ -50,7 +50,7 @@ const App = () => {
                 <Route path='/' element={"Home"} />
 
                 {/* introduction */}
-                <Route path='/test' element={<Test />} />
+                <Route path='/introduction' element={"Introduction"} />
                 <Route path='/rent' element={<RentBike />} />
                 <Route path='/return' element={<ReturnBike />} />
                 <Route path='/search/station' element={"Search station"} />
