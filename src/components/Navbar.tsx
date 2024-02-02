@@ -1,7 +1,7 @@
 import { useEffect } from "react";
-import { AiOutlineMenu } from "react-icons/ai";
 import { TooltipComponent } from "@syncfusion/ej2-react-popups";
 import { useStateContext } from "../context/contextProvider";
+import { FaArrowLeft, FaArrowRight } from "react-icons/fa";
 
 type NavProps = {
   title: string;
@@ -12,7 +12,7 @@ type NavProps = {
 }
 
 const NavButton = ({title, customFunc, icon, color, dotColor}: NavProps) => (
-  <TooltipComponent content={title} position="BottomCenter" style={{color}} className="relative text-xl rounded-full p-3 hover:bg-light-gray">
+  <TooltipComponent content={title} position="BottomCenter" style={{color}} className="fixed text-2xl rounded-full p-3 hover:bg-light-gray">
     <button type="button" onClick={customFunc}>
       <span style={{background: dotColor}} className="absolute inline-flex rounded-full h-2 w-2 right-2 top-2"/>{icon}
     </button>
@@ -20,7 +20,7 @@ const NavButton = ({title, customFunc, icon, color, dotColor}: NavProps) => (
 )
 
 const Navbar = () => {
-  const {setActiveMenu, screenSize, setScreenSize} = useStateContext();
+  const {activeMenu, setActiveMenu, screenSize, setScreenSize} = useStateContext();
 
   useEffect(() => {
     const handleResize = () => setScreenSize(window.innerWidth);
@@ -40,9 +40,12 @@ const Navbar = () => {
   },[screenSize])
 
   return (
-    <div className="flex justify-between md:mx-6 p-2 relative">
-      <NavButton title="Menu" customFunc={() => setActiveMenu((prev) => !prev)} color="blue" icon={<AiOutlineMenu />} />
-    </div>
+    <NavButton 
+      title="Menu" 
+      customFunc={() => setActiveMenu((prev) => !prev)} 
+      color="green" 
+      icon={activeMenu ? <FaArrowLeft /> : <FaArrowRight />} 
+    />
   )
 }
 

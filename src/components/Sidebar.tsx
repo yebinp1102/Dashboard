@@ -1,7 +1,5 @@
 import { Link, NavLink } from 'react-router-dom';
 import { SiShazam } from "react-icons/si";
-import { MdOutlineCancel } from 'react-icons/md';
-import { TooltipComponent } from '@syncfusion/ej2-react-popups';
 import { links } from '../data/dummy';
 import { useStateContext } from '../context/contextProvider';
 
@@ -21,6 +19,8 @@ const SideBar = () => {
     <div className='ml-3 h-screen pb-10 overflow-auto md:overflow-hidden md:hover:overflow-auto`'>
       {activeMenu && (
         <>
+
+        
           <div className='flex justify-between items-center'>
             <Link to="/" onClick={() => handleCloseSidebar} className='flex items-end justify-start gap-2 ml-3 mt-8 text-xl tracking-tight text-[#056531]'>
               <SiShazam className="text-3xl mb-1"/> 
@@ -30,13 +30,9 @@ const SideBar = () => {
                 <p className='font-point'>Bike</p>
               </span>
             </Link>
-            <TooltipComponent content={"Menu"} position="BottomCenter">
-              <button type="button" onClick={() => setActiveMenu((prevActiveState) => !prevActiveState)} className='text-xl rounded-full p-4 hover:bg-light-gray mt-4 block md:hidden'>
-                <MdOutlineCancel />
-              </button>
-            </TooltipComponent>
           </div>
 
+          {/* menu list */}
           <div className='mt-14'>
             {links.map(item => (
               <div key={item.title} className='mb-16 border-b border-slate-300 pb-4 last:border-none'>

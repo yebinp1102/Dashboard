@@ -9,7 +9,7 @@ const RentBike = () => {
     <div className='mt-12 w-full py-8 px-12 flex flex-wrap gap-8 justify-center'>
 
       {/* 영상 */}
-      <div className='w-[830px] h-[500px] border bg-white p-8'>
+      <div className='w-[830px] h-[500px] border self-center bg-white p-8'>
         <div className='w-full h-full border'>
           <ReactPlayer url="https://youtu.be/2i2FpMWQBnU" width="100%" height="100%" />
         </div>
