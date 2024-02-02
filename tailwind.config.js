@@ -11,14 +11,6 @@ export default {
       body: ['Gowun Dodum', 'sans-serif'],
       point: ['Noto Sans', 'sans-serif'],
     },
-    // textColor: {
-    //   'primary-500': '#22A699',
-    //   'primary-yellow': '#F2BE22',
-    //   'primary-orange': '#F29727',
-    //   'primary-red-orange': '#F03A47',
-    //   'primary-pink': '#FC60A8',
-    //   'white': '#fff'
-    // },
     extend: {
       fontSize: {
         14: '14px',
