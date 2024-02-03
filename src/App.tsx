@@ -4,10 +4,11 @@ import { TooltipComponent} from '@syncfusion/ej2-react-popups';
 import { Navbar, SideBar } from './components';
 import './App.css';
 import { useStateContext } from './context/contextProvider';
-import UserAnalysis from './pages/UserAnalysis';
-import Test from './pages/Test';
+import UsageAnalysis from './pages/UsageAnalysis';
 import ReturnBike from './pages/ReturnBike';
 import RentBike from './pages/RentBike';
+import FailureReport from './pages/FailureReport';
+import Test from './pages/Test';
 
 const App = () => {
   const {activeMenu} = useStateContext();
@@ -56,8 +57,10 @@ const App = () => {
                 <Route path='/search/station' element={"Search station"} />
 
                 {/* analysis */}
-                <Route path='/monthly/usage' element={<UserAnalysis />} />
-                <Route path='/monthly/new_user' element={<Test />} />
+                <Route path='/monthly/usage' element={<UsageAnalysis />} />
+                <Route path='/failure/report' element={<FailureReport />} />
+
+                <Route path='/test' element={<Test />} />
 
               </Routes>
             </div>

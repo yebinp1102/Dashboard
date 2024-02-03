@@ -34,15 +34,15 @@ export const links = [
     ],
   },
   {
-    title: '월별 통계',
+    title: '통계',
     icon: <TbDeviceAnalytics />,
     links: [
       {
-        name: '신규가입자',
-        linkTo: 'monthly/new_user',
+        name: '고장이력 (일별)',
+        linkTo: 'failure/report',
       },
       {
-        name: '이용정보',
+        name: '이용정보 (월별)',
         linkTo: 'monthly/usage',
       },
     ],
