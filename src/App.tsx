@@ -7,7 +7,7 @@ import { useStateContext } from './context/contextProvider';
 import UsageAnalysis from './pages/UsageAnalysis';
 import ReturnBike from './pages/ReturnBike';
 import RentBike from './pages/RentBike';
-import FailureReport from './pages/FailureReport';
+import DayReport from './pages/DayReport';
 import Test from './pages/Test';
 
 const App = () => {
@@ -58,7 +58,7 @@ const App = () => {
 
                 {/* analysis */}
                 <Route path='/monthly/usage' element={<UsageAnalysis />} />
-                <Route path='/failure/report' element={<FailureReport />} />
+                <Route path='/day/report' element={<DayReport />} />
 
                 <Route path='/test' element={<Test />} />
 
