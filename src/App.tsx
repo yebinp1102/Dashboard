@@ -9,6 +9,8 @@ import ReturnBike from './pages/ReturnBike';
 import RentBike from './pages/RentBike';
 import DayReport from './pages/DayReport';
 import Test from './pages/Test';
+import SearchStation from './pages/SearchStation';
+import Home from './pages/Home';
 
 const App = () => {
   const {activeMenu} = useStateContext();
@@ -48,13 +50,12 @@ const App = () => {
             <div>
               <Routes>
                 {/* Dashboard */}
-                <Route path='/' element={"Home"} />
+                <Route index path='/' element={<Home />} />
 
                 {/* introduction */}
-                <Route path='/introduction' element={"Introduction"} />
                 <Route path='/rent' element={<RentBike />} />
                 <Route path='/return' element={<ReturnBike />} />
-                <Route path='/search/station' element={"Search station"} />
+                <Route path='/search/station' element={<SearchStation />} />
 
                 {/* analysis */}
                 <Route path='/monthly/usage' element={<UsageAnalysis />} />
