@@ -1,14 +1,14 @@
 import { GoDotFill } from 'react-icons/go'
-const COLORS = ['#0088FE', '#00C49F', '#FFBB28', '#FF8042', '#F03A47', '#395C6B'];
 
 type Props = {
   type: string;
   cnt: number;
-  color: string;
-  totalCnt: string | number;
+  color?: string;
+  totalCnt: number;
 }
 
 const PieChartKey = ({type, cnt, color, totalCnt}: Props) => {
+  const count = totalCnt > 1000 ? 1000 : totalCnt
   return (
     <div 
       className={
@@ -18,7 +18,7 @@ const PieChartKey = ({type, cnt, color, totalCnt}: Props) => {
       <p className='flex items-center gap-2'> 
         <GoDotFill /> <span className='text-black'>{type} : {cnt}</span>
       </p>
-      <div className='text-[1.25rem]'>{(cnt/Number(totalCnt) * 100).toFixed(1) }%</div>
+      <div className='text-[1.25rem]'>{(cnt/count * 100).toFixed(1) }%</div>
     </div>
   )
 }
