@@ -68,7 +68,7 @@ const Home = () => {
               
               <div className='bg-primary-orange w-full flex-1 rounded-t-2xl shadow-lg px-8'>
                 <div className="flex flex-col items-center border-t-[3px] border-white mt-8">
-                  <BiLeaf className="text-[76px] mt-6" />
+                  <BiLeaf className="text-[76px] mt-4" />
                   <p className="text-lg font-black" >깨끗한</p>
                 </div>
 
