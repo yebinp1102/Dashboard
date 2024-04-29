@@ -51,6 +51,8 @@ const SearchStation = () => {
     
     const fetchData = async() => {
       setIsLoading(true);
+
+      // 지도 UI 생성
       const {data} = await axios.get(url);
       const response = data.stationInfo.row;
       

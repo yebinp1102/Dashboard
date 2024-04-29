@@ -31,7 +31,7 @@ const Home = () => {
       <div className='flex flex-wrap gap-16 gap-y-28 justify-center mx-auto max-w-5xl mt-32'>
 
         {/* list 01 */}
-        <div className='bg-white w-[400px] h-[300px] border shadow-lg rounded-xl relative'>
+        <div className='bg-white w-[450px] h-[300px] border shadow-lg rounded-xl relative'>
           <div className='w-[120px] h-[350px] absolute -top-5 left-9'>
 
             {/* index container */}
@@ -58,7 +58,7 @@ const Home = () => {
         </div>
 
         {/* list 02 */}
-        <div className='bg-white w-[400px] h-[300px] border shadow-lg rounded-xl relative'>
+        <div className='bg-white w-[450px] h-[300px] border shadow-lg rounded-xl relative'>
           <div className='w-[120px] h-[350px] absolute -top-5 left-9'>
 
             {/* index container */}
@@ -85,7 +85,7 @@ const Home = () => {
         </div>
 
         {/* list 03 */}
-        <div className='bg-white w-[400px] h-[300px] border shadow-lg rounded-xl relative'>
+        <div className='bg-white w-[450px] h-[300px] border shadow-lg rounded-xl relative'>
           <div className='w-[120px] h-[350px] absolute -top-5 left-9'>
 
             {/* index container */}
@@ -112,7 +112,7 @@ const Home = () => {
         </div>
 
         {/* list 04 */}
-        <div className='bg-white w-[400px] h-[300px] border shadow-lg rounded-xl relative'>
+        <div className='bg-white w-[450px] h-[300px] border shadow-lg rounded-xl relative'>
           <div className='w-[120px] h-[350px] absolute -top-5 left-9'>
 
             {/* index container */}
