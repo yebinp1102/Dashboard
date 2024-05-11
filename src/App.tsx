@@ -8,7 +8,6 @@ import UsageAnalysis from './pages/UsageAnalysis';
 import ReturnBike from './pages/ReturnBike';
 import RentBike from './pages/RentBike';
 import DayReport from './pages/DayReport';
-import Test from './pages/Test';
 import SearchStation from './pages/SearchStation';
 import Home from './pages/Home';
 
@@ -61,7 +60,6 @@ const App = () => {
                 <Route path='/monthly/usage' element={<UsageAnalysis />} />
                 <Route path='/day/report' element={<DayReport />} />
 
-                <Route path='/test' element={<Test />} />
 
               </Routes>
             </div>

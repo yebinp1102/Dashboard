@@ -61,10 +61,10 @@ const SearchStation = () => {
         // 위도(lat) lat +- 0.009
         // 경도(lon) lon +- 0.009
         // 둘다 만족해야함 station.STA_LAT, station.STA_LONG
-        if(station.STA_LAT >= searchLocation?.lat - 0.009 &&
-            station.STA_LAT <= searchLocation?.lat + 0.009 && 
-            station.STA_LONG >= searchLocation?.lon - 0.009 &&
-            station.STA_LONG <= searchLocation?.lon + 0.009
+        if(station.STA_LAT >= searchLocation!.lat! - 0.009 &&
+            station.STA_LAT <= searchLocation!.lat! + 0.009 && 
+            station.STA_LONG >= searchLocation!.lon! - 0.009 &&
+            station.STA_LONG <= searchLocation!.lon! + 0.009
           ){
             const formData = {
               RENT_NO: station.RENT_NO,
@@ -127,7 +127,7 @@ const SearchStation = () => {
                   <div>근처에 대여소가 없습니다. 다른 검색어를 입력해 주세요.</div>
                 ): (
                   <div>
-                    <p className='text-slate-500 text-sm mb-4'>입력하신 '{searchLocation.location}' 근처에 위치한 {searchResult.length}개의 정류소를 찾았습니다.</p>
+                    <p className='text-slate-500 text-sm mb-4'>입력하신 '{searchLocation!.location}' 근처에 위치한 {searchResult.length}개의 정류소를 찾았습니다.</p>
                     {searchResult.map((station: any) => (
                       <SearchLocationResult key={station.RENT_NO} bikes={station.bikes} location={station.location} address={station.address}  />
                     ))}

@@ -17,7 +17,7 @@ const AgeTypePieChart = ({data}: Props) => {
           fill="#8884d8"
           dataKey="cnt"
         >
-          {data.map((entry, index) => (
+          {data.map((_, index) => (
             <Cell key={`cell-${index}`} fill={COLORS[index % COLORS.length]} />
           ))}
         </Pie>
