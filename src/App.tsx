@@ -49,16 +49,16 @@ const App = () => {
             <div>
               <Routes>
                 {/* Dashboard */}
-                <Route index path='/' element={<Home />} />
+                <Route index path='/Dashboard/home' element={<Home />} />
 
                 {/* introduction */}
-                <Route path='/rent' element={<RentBike />} />
-                <Route path='/return' element={<ReturnBike />} />
-                <Route path='/search/station' element={<SearchStation />} />
+                <Route path='/Dashboard/rent' element={<RentBike />} />
+                <Route path='/Dashboard/return' element={<ReturnBike />} />
+                <Route path='/Dashboard/search/station' element={<SearchStation />} />
 
                 {/* analysis */}
-                <Route path='/monthly/usage' element={<UsageAnalysis />} />
-                <Route path='/day/report' element={<DayReport />} />
+                <Route path='/Dashboard/monthly/usage' element={<UsageAnalysis />} />
+                <Route path='/Dashboard/day/report' element={<DayReport />} />
 
 
               </Routes>

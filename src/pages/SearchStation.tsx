@@ -48,9 +48,7 @@ const SearchStation = () => {
     const fetchData = async () => {
       setIsLoading(true);
 
-      const url = process.env.VITE_API_KEY
-        ? `http://openapi.seoul.go.kr:8088/${process.env.VITE_API_KEY}/json/tbCycleStationInfo/1/1000`
-        : `http://openapi.seoul.go.kr:8088/${import.meta.env.VITE_API_KEY}/json/tbCycleStationInfo/1/1000`;
+      const url = `http://openapi.seoul.go.kr:8088/${import.meta.env.VITE_API_KEY}/json/tbCycleStationInfo/1/1000`;
 
       // 지도 UI 생성
       const { data } = await axios.get(url);

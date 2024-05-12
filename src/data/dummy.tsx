@@ -17,7 +17,7 @@ export const links = [
     links: [
       {
         name: '따릉이 소개',
-        linkTo: '',
+        linkTo: 'home',
       },
       {
         name: '대여 방법',

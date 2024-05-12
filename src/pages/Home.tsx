@@ -1,6 +1,7 @@
 import { PiSneakerMoveBold } from "react-icons/pi";
 import { BiLeaf, BiLogoUpwork } from "react-icons/bi";
 import { FaRegSmile } from "react-icons/fa";
+import City from '/assets/images/city.svg';
 
 const Home = () => {
   return (
@@ -15,8 +16,8 @@ const Home = () => {
 
         <div>
           <img 
-            src="public/assets/images/city.svg" 
-            alt="" 
+            src={City}
+            alt="city_img_svg" 
             className='absolute right-0 -bottom-6 w-[380px]' 
           />
         </div>

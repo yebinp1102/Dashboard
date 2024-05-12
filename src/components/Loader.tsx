@@ -1,8 +1,10 @@
+import Loading from '/assets/icons/loader.svg';
+
 const Loader = () => {
   return (
     <div>
       <img 
-        src="/assets/icons/loader.svg"
+        src={Loading}
         alt="loader"
         width={44}
         height={44}

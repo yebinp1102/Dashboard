@@ -18,9 +18,7 @@ const SideBar = () => {
   return (
     <div className='ml-3 h-screen pb-10 overflow-auto md:overflow-hidden md:hover:overflow-auto`'>
       {activeMenu && (
-        <>
-
-        
+        <>       
           <div className='flex justify-between items-center'>
             <Link to="/" onClick={() => handleCloseSidebar} className='flex items-end justify-start gap-2 ml-3 mt-8 text-xl tracking-tight text-[#056531]'>
               <SiShazam className="text-3xl mb-1"/> 
@@ -41,7 +39,7 @@ const SideBar = () => {
                   <span>{item.title}</span>
                 </p>
                 {item.links.map(link => (
-                  <NavLink to={`/${link.linkTo}`} key={link.name} onClick={() => handleCloseSidebar} className={({ isActive }) => isActive ? activeLink : notActiveLink}>
+                  <NavLink to={`Dashboard/${link.linkTo}`} key={link.name} onClick={() => handleCloseSidebar} className={({ isActive }) => isActive ? activeLink : notActiveLink}>
                     <span className=''>{link.name}</span>
                   </NavLink>
                 ))}

@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { Button } from "../components"
 import axios from 'axios';
-import patterImg from '../../public/assets/images/vector_pattern.svg'
+import patterImg from '/assets/images/vector_pattern.svg'
 import UserAnalysisThumb from "../components/UserAnalysisThumb";
 import { MdOutlineSupervisorAccount } from "react-icons/md";
 import { BsBoxSeam } from "react-icons/bs";
@@ -32,12 +32,8 @@ const UsageAnalysis = () => {
   useEffect(() => {    
     const fetchData = async() =>{
       try {
-        // const url = import.meta.env.PROD ? 
-        // baseURL: import.meta.env.PROD ? "" : "http://localhost:3000",
 
-        const url = process.env.VITE_API_KEY ? 
-        `http://openapi.seoul.go.kr:8088/${process.env.API_KEY}/json/tbCycleRentUseMonthInfo/1/1000/${month}` :
-        `http://openapi.seoul.go.kr:8088/${keyConfig.API_KEY}/json/tbCycleRentUseMonthInfo/1/1000/${month}`;
+        const url = `http://openapi.seoul.go.kr:8088/${keyConfig.API_KEY}/json/tbCycleRentUseMonthInfo/1/1000/${month}`;
 
         setLoading(true);
         const {data} = await axios.get(url);
