@@ -49,7 +49,7 @@ const App = () => {
             <div>
               <Routes>
                 {/* Dashboard */}
-                <Route index path='/Dashboard/home' element={<Home />} />
+                <Route index path='/Dashboard/' element={<Home />} />
 
                 {/* introduction */}
                 <Route path='/Dashboard/rent' element={<RentBike />} />
