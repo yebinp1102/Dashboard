@@ -1,4 +1,12 @@
+# 서울시 공공데이터와 카카오 맵 API를 사용한 데이터 도식화 프로젝트
+<img src="public/assets/images/dashboard-thumb.png">
+
+#### 배포 링크 : <a href="https://dashboard-v2-coral.vercel.app">https://dashboard-v2-coral.vercel.app</a>
+
+<br/><br/>
+
 # 01. 프로젝트 정보
+
 ### (1) 프로젝트 제목
 서울시 공공데이터와 카카오 맵 API를 사용한 데이터 도식화
 <br><br>
