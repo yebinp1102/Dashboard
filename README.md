@@ -1,4 +1,4 @@
-# 서울시 공공데이터와 카카오 맵 API를 사용한 데이터 도식화 프로젝트
+# 자전거 Dashboard | 서울시와 카카오의 OPEN API 기반 데이터 도식화
 <img src="public/assets/images/dashboard-thumb.png">
 
 #### 배포 링크 : <a href="https://dashboard-v2-coral.vercel.app">https://dashboard-v2-coral.vercel.app</a>
